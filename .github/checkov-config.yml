@@ -4,4 +4,6 @@ framework:
   - terraform
 output: cli,sarif
 quiet: true     # Display only failed checks
+skip-path:
+  - /examples     # Skip scanning the examples directory
 soft-fail: true # Do not return an error code if there are failed checks
