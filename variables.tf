@@ -67,7 +67,7 @@ variable "notification_emails" {
 }
 
 variable "hide_app" {
-  description = "Hides the Application from user's My Apps portal. Set to `true` if you want users to see the app."
+  description = "Hides the Application from user's My Apps portal. Set to `true` if you want to hide the app."
   type        = bool
   default     = false
 }
