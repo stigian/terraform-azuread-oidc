@@ -88,7 +88,7 @@ No modules.
 | <a name="input_app_admin_upns"></a> [app\_admin\_upns](#input\_app\_admin\_upns) | List of Entra ID UPNs for app administrators / owners.<br/><br/>Example:<br/>[<br/>  "user1@example.onmicrosoft.com",<br/>  "user1@example.onmicrosoft.com"<br/>] | `list(string)` | n/a | yes |
 | <a name="input_azuread_environment"></a> [azuread\_environment](#input\_azuread\_environment) | Azure AD environment, either global or usgovernment. | `string` | `"usgovernment"` | no |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created (affects nearly all resources) | `bool` | `true` | no |
-| <a name="input_hide_app"></a> [hide\_app](#input\_hide\_app) | Hides the Application from user's My Apps portal. Set to `true` if you want users to see the app. | `bool` | `false` | no |
+| <a name="input_hide_app"></a> [hide\_app](#input\_hide\_app) | Hides the Application from user's My Apps portal. Set to `true` if you want to hide the app. | `bool` | `false` | no |
 | <a name="input_homepage_url"></a> [homepage\_url](#input\_homepage\_url) | URL of the homepage for the application. | `string` | `"demo.example.com"` | no |
 | <a name="input_identifier"></a> [identifier](#input\_identifier) | Name of the project. | `string` | `"demo"` | no |
 | <a name="input_notification_emails"></a> [notification\_emails](#input\_notification\_emails) | List of email addresses to receive signing certificate expiration notifications.<br/>These emails will receive notifications when the SSO IdP SAML certificate<br/>is about to expire.<br/><br/>Example:<br/>[<br/>  "user1@example.com",<br/>  "user2@example.com"<br/>] | `list(string)` | n/a | yes |
