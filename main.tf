@@ -73,6 +73,7 @@ resource "azuread_service_principal" "this" {
   feature_tags {
     enterprise = true
     gallery    = false
+    hide       = var.hide_app
   }
 }
 

@@ -65,3 +65,9 @@ variable "notification_emails" {
     error_message = "The notification_emails variable must be a list of one or more valid email addresses."
   }
 }
+
+variable "hide_app" {
+  description = "Hides the Application from user's My Apps portal. Set to `true` if you want users to see the app."
+  type        = bool
+  default     = false
+}
