@@ -5,7 +5,7 @@ variable "create" {
 }
 
 variable "identifier" {
-  description = "Name of the project."
+  description = "Name of the project. Used in naming of most resources."
   type        = string
   default     = "demo"
 }
@@ -17,15 +17,24 @@ variable "azuread_environment" {
 }
 
 variable "homepage_url" {
-  description = "URL of the homepage for the application."
+  description = "URL of the homepage for the application, without the protocol. E.g. demo.example.com"
   type        = string
   default     = "demo.example.com"
 }
 
 variable "redirect_uris" {
-  description = "List of URIs where authentication responses are sent."
-  type        = list(string)
-  default     = []
+  description = <<EOT
+    "List of URIs where authentication responses are sent.
+
+    Example:
+    [
+      "https://demo1.example.com/oauth2/idpresponse",
+      "https://demo2.example.com/oauth2/idpresponse"
+    ]
+  EOT
+
+  type    = list(string)
+  default = []
 }
 
 variable "app_admin_upns" {
