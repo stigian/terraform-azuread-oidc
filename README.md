@@ -89,10 +89,10 @@ No modules.
 | <a name="input_azuread_environment"></a> [azuread\_environment](#input\_azuread\_environment) | Azure AD environment, either global or usgovernment. | `string` | `"usgovernment"` | no |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created (affects nearly all resources) | `bool` | `true` | no |
 | <a name="input_hide_app"></a> [hide\_app](#input\_hide\_app) | Hides the Application from user's My Apps portal. Set to `true` if you want to hide the app. | `bool` | `false` | no |
-| <a name="input_homepage_url"></a> [homepage\_url](#input\_homepage\_url) | URL of the homepage for the application. | `string` | `"demo.example.com"` | no |
-| <a name="input_identifier"></a> [identifier](#input\_identifier) | Name of the project. | `string` | `"demo"` | no |
+| <a name="input_homepage_url"></a> [homepage\_url](#input\_homepage\_url) | URL of the homepage for the application, without the protocol. E.g. demo.example.com | `string` | `"demo.example.com"` | no |
+| <a name="input_identifier"></a> [identifier](#input\_identifier) | Name of the project. Used in naming of most resources. | `string` | `"demo"` | no |
 | <a name="input_notification_emails"></a> [notification\_emails](#input\_notification\_emails) | List of email addresses to receive signing certificate expiration notifications.<br/>These emails will receive notifications when the SSO IdP SAML certificate<br/>is about to expire.<br/><br/>Example:<br/>[<br/>  "user1@example.com",<br/>  "user2@example.com"<br/>] | `list(string)` | n/a | yes |
-| <a name="input_redirect_uris"></a> [redirect\_uris](#input\_redirect\_uris) | List of URIs where authentication responses are sent. | `list(string)` | `[]` | no |
+| <a name="input_redirect_uris"></a> [redirect\_uris](#input\_redirect\_uris) | "List of URIs where authentication responses are sent.<br/><br/>    Example:<br/>    [<br/>      "https://demo1.example.com/oauth2/idpresponse",<br/>      "https://demo2.example.com/oauth2/idpresponse"<br/>    ] | `list(string)` | `[]` | no |
 
 ## Outputs
 
